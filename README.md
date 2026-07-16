@@ -1,75 +1,70 @@
-# React + TypeScript + Vite
+# Rituraj Sharma — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website, built to showcase my projects, skills, and background as a Software Engineer.
 
-Currently, two official plugins are available:
+Live at → _[your-deployment-url-here]_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer | Technology |
+|---|---|
+| Framework | React 19 + TypeScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS v4 |
+| Icons | React Icons |
+| Fonts | Outfit · JetBrains Mono · VT323 (Google Fonts) |
+| Deployment | _(Vercel / GitHub Pages — update as needed)_ |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📄 Sections
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Hero** — Name, role, and brief bio
+- **Skills** — Core languages, front-end tools, systems & data, dev tools
+- **Projects** — Featured builds with screenshots, tags, GitHub & live demo links
+- **Beyond Code** — Co-curricular creative work (music production, workshops)
+- **Contact** — LinkedIn, GitHub, and email links
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Running Locally
 
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
 
 ```
+src/
+├── components/
+│   ├── navbar/          # Responsive navbar with mobile hamburger menu
+│   ├── hero-section/    # Hero text component
+│   ├── skill-section/   # Skill tile cards
+│   ├── projects-section/# Horizontal project cards
+│   ├── beyond-code/     # Co-curricular project cards
+│   ├── contact-section/ # Contact link tiles
+│   ├── bg-circles/      # Decorative background blobs
+│   └── *.tsx            # Shared text components (HeadingText, WhiteText, etc.)
+├── App.tsx              # Main page layout
+├── App.css              # Tailwind theme tokens (custom fonts)
+└── index.css            # Global styles
+```
+
+---
+
+## 📬 Contact
+
+- **LinkedIn** → [rituraj-sharma](https://www.linkedin.com/in/rituraj-sharma-4b514a384/)
+- **GitHub** → [riturajdroid](https://github.com/riturajdroid)
+- **Email** → riturajsharma2207@gmail.com
