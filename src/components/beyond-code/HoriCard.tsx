@@ -1,4 +1,3 @@
-import React from 'react'
 import HeadingText from '../HeadingText';
 import DescriptionText from '../DescriptionText';
 import WhiteText from '../WhiteText';

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const NavbarElements = ({ e, isActive, onClick }: { e: string, isActive: boolean, onClick: () => void }) => {
     return (
         <div onClick={onClick} className='flex flex-col items-center gap-[5px] group'>
