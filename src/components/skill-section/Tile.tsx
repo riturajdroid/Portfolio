@@ -11,7 +11,7 @@ const Tile = ({ num, title, arr }: TileProps) => {
     return (
         <div className='
             group
-            w-full sm:w-[calc(50%-10px)] lg:w-[270px]
+            w-full
             border-[1.5px] border-[#6763f0]/50
             hover:border-[#6763f0]
             p-5 m-[5px] rounded-2xl

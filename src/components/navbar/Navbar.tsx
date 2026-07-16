@@ -66,7 +66,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop nav links */}
-                <div className='hidden md:flex gap-6 lg:gap-20 text-[#ababab] font-bold leading-none text-[16px] lg:text-[18px]'>
+                <div className='hidden lg:flex gap-8 xl:gap-20 text-[#ababab] font-bold leading-none text-[16px] xl:text-[18px]'>
                     {navLinks.map(({ label, id }) => (
                         <NavbarElements
                             key={id}
@@ -79,7 +79,7 @@ const Navbar = () => {
 
                 {/* Hamburger button (mobile only) */}
                 <button
-                    className='md:hidden flex flex-col justify-center items-center gap-[5px] w-[36px] h-[36px] cursor-pointer'
+                    className='lg:hidden flex flex-col justify-center items-center gap-[5px] w-[36px] h-[36px] cursor-pointer'
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
                 >
@@ -90,7 +90,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile dropdown drawer */}
-            <div className={`fixed z-40 top-[72px] left-0 w-full bg-black/90 backdrop-blur-md flex flex-col items-start px-8 py-4 gap-6 transition-all duration-300 md:hidden ${menuOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-4'}`}>
+            <div className={`fixed z-40 top-[72px] left-0 w-full bg-black/90 backdrop-blur-md flex flex-col items-start px-8 py-4 gap-6 transition-all duration-300 lg:hidden ${menuOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-4'}`}>
                 {navLinks.map(({ label, id }) => (
                     <NavbarElements
                         key={id}

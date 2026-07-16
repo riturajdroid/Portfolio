@@ -1,3 +1,4 @@
+
 import HeadingText from '../HeadingText';
 import DescriptionText from '../DescriptionText';
 import WhiteText from '../WhiteText';
@@ -21,16 +22,16 @@ const HoriCard = ({ LR, screenshotPath,
     linkText }: HorizontalCardProps) => {
     return (
     <div className={`w-full mb-[30px] flex flex-col items-center border-[2px] border-[#6763f0] p-[10px] m-[5px] rounded-[10px] bg-[#ffffff11] gap-4
-        md:flex-row md:justify-evenly md:items-center md:h-[500px]
-        ${LR === 'L' ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-            <div className='w-full md:w-[50%] h-[200px] sm:h-[250px] md:h-[70%] overflow-hidden rounded-[8px] flex items-center justify-center'>
+        lg:flex-row lg:justify-evenly lg:items-center lg:h-[500px]
+        ${LR === 'L' ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
+            <div className='w-full lg:w-[50%] h-[200px] sm:h-[250px] lg:h-[70%] overflow-hidden rounded-[8px] flex items-center justify-center'>
                 <img
                     src={screenshotPath}
                     alt={title}
                     className="w-full h-full object-cover"
                 />
             </div>
-            <div className='w-full md:w-[45%] px-2'>
+            <div className='w-full lg:w-[45%] px-2'>
                 <div>
                     <HeadingText e={title} />
                 </div>

@@ -63,7 +63,7 @@ function App() {
             <HeadingText e="My Arsenal" />
             <DescriptionText e="A Toolkit Of Technologies And Concepts I Work With" />
           </div>
-          <div className='flex flex-wrap justify-center gap-3 mt-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 mt-6'>
             <Tile
               num="01"
               title="Core Languages"
