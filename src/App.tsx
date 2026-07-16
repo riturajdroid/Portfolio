@@ -49,7 +49,9 @@ function App() {
           </div>
 
           {/* CTA button */}
-          <div className="w-full max-w-[170px] p-[15px] my-[10px] rounded-[28px] border-[3px] brightness-125 shadow-[0_0_30px_rgba(139,92,246,0.6)] border-[#2563EB] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105">
+          <div
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            className="w-full max-w-[170px] p-[15px] my-[10px] rounded-[28px] border-[3px] brightness-125 shadow-[0_0_30px_rgba(139,92,246,0.6)] border-[#2563EB] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105">
             <WhiteText e="View My Work" />
           </div>
         </div>
