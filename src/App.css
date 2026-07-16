@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  /* Creates the class: font-retro */
+  --font-retro: "VT323", monospace;
+  
+  /* Creates the class: font-modern */
+  --font-modern: "JetBrains Mono", monospace;
+
+  /* This creates the utility: font-outfit */
+  --font-outfit: "Outfit", sans-serif;
+  
+  /* This creates the utility: font-playfair */
+  --font-playfair: "Playfair Display", serif;
+}
